@@ -1,0 +1,171 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+    background-image: url('ab.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+h1 {
+    color: #ffcc00;
+}
+
+h2 {
+    color: #ffcc00;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.feature-item {
+    background: #2a2a2a;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    width: 150px;
+    text-align: center;
+}
+
+.feature-item img {
+    width: 100%;
+    height: auto;
+}
+
+input[type="file"],
+select,
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #333;
+    color: #ffffff;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: 2px solid #ffcc00;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+    border-color: #ffcc00;
+}
+
+#result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #ffcc00;
+}
+
+#downloadLink {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Added styles for social links */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.social-links img {
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+}
+
+/* Added styles for "Know More About Me" link */
+.about-me {
+    margin-top: 20px;
+}
+
+.about-me a {
+    color: #ffcc00; /* Color for the link */
+    text-decoration: underline; /* Underline for emphasis */
+    font-weight: bold; /* Bold text */
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    input[type="file"],
+    select,
+    button {
+        font-size: 14px;
+    }
+
+    #result {
+        font-size: 16px;
+    }
+
+    #downloadLink {
+        font-size: 14px;
+    }
+}
+
+.contact-box {
+    background: #2a2a2a; /* Same background as feature items for consistency */
+    border: 2px solid #ffcc00; /* Add a golden border to make it stand out */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Add padding for better spacing */
+    margin: 20px 0; /* Add margin to separate it from other elements */
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5); /* Subtle shadow for depth */
+}
+
+/* Adjust the contact-row to ensure items are displayed nicely */
+.contact-row {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space items evenly */
+    margin-bottom: 10px; /* Space between rows */
+}
+
+.contact-item {
+    flex: 1; /* Allow items to grow equally */
+    text-align: left; /* Align text to the left */
+    margin-right: 10px; /* Space between items */
+}
+
+.contact-item:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
